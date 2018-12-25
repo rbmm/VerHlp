@@ -101,9 +101,7 @@ bool RsrcNode::ParseResourse(PVOID buf, ULONG size, ULONG* pLength, PCSTR prefix
 				}
 			}
 
-			if (RsrcNode* node = new RsrcNode(
-				DBG_OPT((prefix))
-				))
+			if (RsrcNode* node = new RsrcNode(DBG_OPT((prefix))))
 			{
 				node->_next = _first, _first = node;
 
