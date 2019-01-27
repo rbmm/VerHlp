@@ -96,7 +96,7 @@ ULONG UpdateVersion(PCWSTR FileName)
 
 	EnumVerData ctx;
 
-	if (ctx.hUpdate = BeginUpdateResource(FileName, TRUE))
+	if (ctx.hUpdate = BeginUpdateResource(FileName, FALSE))
 	{
 		ctx.fDiscard = TRUE;
 
